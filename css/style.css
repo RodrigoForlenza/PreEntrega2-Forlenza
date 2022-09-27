@@ -1,0 +1,763 @@
+@import url('https://fonts.googleapis.com/css2?family=Basic&family=Montserrat:wght@700&display=swap');
+
+
+*{
+    margin: 0;
+	padding: 0;
+}
+
+html{
+    font-size: 62.5%;
+    }
+
+body{
+        background-color: rgb(236, 225, 218);
+        font-family: 'Basic', sans-serif;
+        font-family: 'Montserrat', sans-serif;
+        
+    }
+
+
+/* Estilos - Header & Footer*/
+
+.headerMobile{
+    /* Por algún motivo el sticky nav dejó de funcionar al agregar el CDN y no lo pude solucionar. El hamburguer icon por el momento tampoco tiene funcionalidad porque es un solo una imagen, no fue hecho con Bootstrap */
+    
+    background-color: rgb(202, 70, 70);
+    border: 1px black solid;
+    height: 100px;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content:space-between;
+    position: sticky;
+    align-self: start;
+    z-index:9999; 
+}
+
+.navMobileDropDown{
+    margin-right: 2em;
+    filter: invert(1);
+}
+
+.headerDesktop{
+    display: none;
+}
+
+
+.iconoSushi{
+    display: flex;
+    flex-direction: row nowrap;
+    align-items: center;
+    margin-left: 2em;
+    transition: 1s ease;
+}
+
+.iconoSushi:hover{
+    transform: scale(1.05);
+    transition: all 1s ease;
+}
+
+.iconoSushiLink{
+    width: 70px;
+    height: auto;
+}
+
+.iconoSushiLink a img{
+    width: 100%;
+    height: 100%;
+}
+
+.iconoSushiTextoMobile{
+    display: flex;
+    flex-direction: column;
+    margin-left: 1.5em;
+}
+
+.iconoSushi b {
+    color:black;
+    font-size: 2em; 
+}
+
+.iconoSushi p {
+    color:black;
+    font-size: 2em;
+}
+
+
+nav ul{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;    
+}   
+
+nav li {
+    list-style-type: none;
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+    font-size: 2em;
+}
+
+
+a{
+    font-weight:bold;
+    text-decoration: none;
+    color: black;
+}
+
+a:hover{
+    color: whitesmoke;
+}
+
+.iconoUsuarioCarrito a{
+    padding: 1em;
+}
+
+
+.footer{
+    border: 1px black solid;
+    font-size: 1.7em;
+}
+
+
+.topFooter {
+    background-color: rgb(202, 70, 70);
+    display: flex;
+    flex-direction: column;
+}
+
+.topFooterDivOne {
+    display: flex;
+    align-self: flex-start;
+    margin-left: 3em;
+}
+
+.topFooterDivOne b{
+    color: black;
+    font-weight: bold;
+}
+
+.topFooterDivTwo { 
+    
+    align-self: flex-start;
+    margin-left: 2em;
+}
+
+.topFooterDivTwo a {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+}
+
+.logosFooter{
+    width: 40px; 
+    height: 40px;
+    transition: 0.5s ease;
+}
+
+.logosFooter:hover{
+    transform: scale(1.2);
+    transition: 0.5s;
+}
+
+.bottomFooterHeader{
+    background-color: black;
+    padding: 2.5em;    
+    display: flex;
+    justify-content: center;
+}
+
+.bottomFooterHeader h2{
+    color: whitesmoke;
+    margin-bottom: 2em;
+    padding-bottom: 0.2em;
+    border-bottom: 2px whitesmoke solid;
+}
+
+.bottomFooterList{
+    background-color: black;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.bottomFooterFirstDiv ul{
+    color: whitesmoke;
+}
+
+.bottomFooterFirstDiv ul li{
+    list-style-type: none;
+    padding-bottom: 1.3em;
+}
+
+
+/* Estilos - Index*/
+
+.carouselImages img {
+    height: 100%;
+    width: 100%;
+}
+
+.carouselDesktop{
+    display: none;
+}
+
+.separador{
+    background-color: rgb(202, 70, 70);
+    margin: 1em;
+    height: 7em;
+    border: 1px solid black;
+    padding-top: 4em;
+    padding-bottom: 4em;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around; 
+}
+
+.separadorHeaderUno{
+    display: none;
+}
+
+.separadorHeaderUno h2{
+    font-weight: bold;
+    font-size: 2em;
+    color: black;
+}
+
+.separadorHeaderDos{
+    align-self: center;
+}
+
+.separadorHeaderDos h2{
+    font-weight: bold;
+    font-size: 2em;
+    color: black;
+}
+
+.iconoSushiSeparador{
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    transition: 1s ease;
+}
+
+.iconoSushiSeparador:hover{
+    transform: scale(1.05);
+    transition: all 1s ease;
+}
+
+.iconoSushiSeparador b{
+    margin-left: 1em;
+    font-size: 2em;
+    color: black;
+    align-self: center;
+}
+
+.twoColumn{
+    background-color: rgb(202, 70, 70);
+    margin: 0 0 2em 0; 
+    max-width: 100%;
+    border: 1px solid black;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+
+.video iframe{
+    width: 90vw;
+    height: 40vh;
+} 
+
+.sectionMosaico{
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+    width: 70vw;
+    margin: auto;
+}
+
+.mosaico {
+    border: 1px solid black;
+    background-color: rgb(202, 70, 70);
+    padding: 1em;
+    margin-bottom: 1.5em;
+}
+
+.imgMosaico{
+    transition: 1s ease;
+}
+
+.imgMosaico:hover{
+    transform: scale(1.05);
+    transition: 0.7s;
+    cursor: pointer;
+}
+
+
+
+/* Estilos Sections */
+
+.sections h1{
+    font-weight: bold;
+    text-align: center;
+    margin: 20px 0px 20px 0px;
+    border: 2px black solid;
+    box-shadow: -8px 5px 4px grey;
+    border-radius: 10px;
+    background-color: rgb(248, 190, 190);
+    transition: 0.5s ease;
+}
+
+.sections h2{
+    font-weight: bold;
+    text-align: left;
+    margin-top: 2em;
+    margin-left: 5em;
+    margin-bottom: 1em;
+    padding: 10px;
+    display: inline-block;
+    border: 2px black solid;
+    border-radius: 10px;
+    box-shadow: -8px 5px 4px grey;
+    background-color: rgb(252, 206, 206);
+    transition: 0.5s ease;
+}
+
+.menuItemGridBootstrap{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 30px;
+    background-color: rgb(243, 221, 148);
+    border: 5px black solid;
+    border-radius: 40px;
+    box-shadow: -10px 5px 4px grey;
+}
+
+.menuItemImg img{
+    border: 2px black solid;
+}
+
+.menuItemText{
+    padding-left: 3em; 
+    padding-right: 3em;
+    display: flex;
+    flex-direction: column;
+}
+
+.menuItemText h3 {
+    font-weight: bold;
+    font-size: 3em;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+}
+
+.menuItemText p {
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+.plusIcon{
+    text-align: right;
+    margin-top: 3em;
+}
+
+.imgPlusIcon{
+    transition: 0.5s ease;
+}
+
+.imgPlusIcon:hover{ 
+    cursor: pointer;
+    transform: scale(1.5) rotate(90deg);
+    transition-duration: 0.5s;
+    filter: invert(20%);
+}
+
+.menuItemTextReverse{
+    padding-left: 3em; 
+    padding-right: 3em;
+    display: flex;
+    flex-direction: column;
+}
+
+.menuItemTextReverse img {
+    align-self: flex-end;
+} 
+
+.menuItemTextReverse h3 {
+    font-weight: bold;
+    font-size: 3em;
+    margin-bottom: 0.5em;
+}
+
+.menuItemTextReverse p {
+    font-size: 1.5em;
+    margin-bottom: 1.5em;
+}
+
+.sectionContacto {
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+fieldset{
+    border: 3px black solid;
+    padding: 30px;
+    max-width: 100%;
+    margin-bottom: 3em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    }
+
+legend{
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+input{
+    margin-bottom: 20px;
+    padding: 7px;
+}
+
+input[type=checkbox] {
+    margin-top:20px;
+}
+
+input[type=submit] {
+    height: 50px;
+}
+
+
+/* Grid-areas - Header, Footer & Index */
+
+header{
+    grid-area: header;
+}
+
+.carouselContainer{
+    grid-area: carousel;
+}
+
+.separador{
+    grid-area: separador;
+}
+
+.sectionMosaico{
+    grid-area: mosaico;
+}
+
+.twoColumn{
+    grid-area: twocolumn;
+}
+
+footer{
+    grid-area: footer;
+}
+
+.wrapperIndex{
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "carousel"
+    "separador"
+    "mosaico"   
+    "twocolumn"
+    "footer"
+    ;
+}
+
+
+/* Grid-areas - Sections*/
+
+section{
+    grid-area: itemMenu;
+}
+
+.wrapperSections{
+
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "itemMenu"
+    "footer"
+    ;
+}
+
+
+/* Media Queries */
+
+@media(min-width:500px){
+
+
+    .twoColumn{
+        padding-bottom: 1em;
+        display: flex;
+        flex-flow: column;
+        justify-content: space-around;
+    }
+
+    .video iframe{
+        width: 90vw;
+        height: 40vh;
+    } 
+
+    .carouselDesktop{
+        display: block;
+    }
+
+    .carouselMobile{
+        display: none;
+    }
+
+    .topFooter {
+        background-color: rgb(202, 70, 70);
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    .topFooterDivOne {
+        display: flex;
+        align-self: center;
+        margin-left: 4em;
+    }
+    
+    .topFooterDivTwo { 
+        justify-content: space-evenly;
+        margin-right: 4em;
+    
+    }
+    
+    .topFooterDivTwo a {
+        padding-left: 0.7em;
+        padding-right: 0.7em;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+}
+
+
+@media(min-width:768px){
+
+
+    .headerMobile{
+        display: none;
+    }
+
+    .headerDesktop {
+        background-color: rgb(202, 70, 70);
+        border: 1px black solid;
+        height: 100px;
+        padding-left: 1.5em;
+        padding-right: 1.5em;
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        justify-content: space-between;
+        position: sticky;
+        align-self: start;
+        z-index:9999;
+    }
+
+    .iconoSushiTextoDesktop b {
+        display: none;
+        
+    }
+    
+    .iconoSushiTextoDesktop p {
+        display: none
+    }
+
+    .twoColumn{
+        padding-bottom: 1em;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        
+    }
+
+    .video iframe{
+        width: 50em;
+        height: 40vh;   
+        margin-left: 1em;
+        margin-right: 1em;
+    } 
+
+    .separador{
+        display: flex;
+        flex-flow: row nowrap;
+        padding-top: 1em;
+        padding-bottom: 1em;
+} 
+
+    .sectionContacto {
+        margin: 30px;
+        display: flex;
+        flex-direction: row;
+        align-self: start;
+        justify-content: space-evenly;
+    }
+
+    fieldset{
+        width: 100%;
+        }
+}
+
+
+@media(min-width:1024px){
+
+    .iconoSushi{
+        display: flex;
+        flex-direction: column;
+        margin-left: 2em;
+    }
+
+    .iconoSushiTextoDesktop{
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+    }
+    
+    .iconoSushiTextoDesktop b {
+        display: block;
+        color:black;
+        font-size: 1.4em;
+    }
+    
+    .iconoSushiTextoDesktop p {
+        display: block;
+        color:black;
+        font-size: 0.8em;
+        justify-content: center;
+    }
+
+    .separadorHeaderUno{
+        display: block;
+        align-self: center;
+    }
+    
+    .separadorHeaderUno h2{
+        font-size: 2em;        
+    }
+
+    .separadorHeaderDos{
+        display: block;
+        align-self: center;
+    }
+    
+    .separadorHeaderDos h2{
+        font-size: 2em;        
+    }
+
+
+
+    /* Sections - Menu Items con BootStrap */
+
+    /*Nota: Al agregar el CDN se me desacomodaron un poco los márgenes y se ve un poco mal especialmente en mobile */
+
+    .sections h1:hover{
+        box-shadow: -10px 5px 4px rgb(0, 0, 0);
+        transition-duration: 1s;
+    }
+    
+    .sections h2:hover{
+        box-shadow: -10px 5px 4px rgb(0, 0, 0);
+        transition-duration: 1s;
+    }
+
+    .menuItemGridBootstrap{
+        margin-top: 30px;
+        margin-bottom: 30px;
+        padding: 30px;
+        background-color: rgb(243, 221, 148);
+        border: 5px black solid;
+        border-radius: 40px;
+        box-shadow: -10px 5px 4px grey;
+        transition: 0.5s ease;
+    }
+    
+    .menuItemImg img{
+        border: 2px black solid;
+    }
+    
+    .menuItemText{
+        padding-left: 3em; 
+        padding-right: 3em;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    
+    .menuItemText h3 {
+        font-weight: bold;
+        font-size: 3em;
+        margin-top: 0;
+        margin-bottom: 0.5em;
+    }
+    
+    .menuItemText p {
+        font-size: 1.7em;
+        margin-bottom: 0.5em;
+    }
+    
+    .menuItemText img {
+        align-self: flex-end;
+    } 
+
+    .menuItemGridBootstrap:hover{
+        transform: scale(1.02);
+        box-shadow: -10px 5px 4px rgb(0, 0, 0);
+        transition: all 0.5s ease-in-out;
+    }
+    
+    .menuItemTextReverse{
+        padding-left: 3em; 
+        padding-right: 3em;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    
+    .menuItemTextReverse h3 {
+        font-weight: bold;
+        font-size: 3em;
+        margin-bottom: 0.5em;
+    }
+    
+    .menuItemTextReverse p {
+        font-size: 1.7em;
+        margin-bottom: 0.5em;
+    }
+        
+    .menuItemTextReverse img {
+        align-self: flex-start;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
