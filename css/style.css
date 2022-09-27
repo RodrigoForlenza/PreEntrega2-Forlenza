@@ -327,6 +327,16 @@ a:hover{
     transition: 0.5s ease;
 }
 
+.sections h1:hover{
+    box-shadow: -10px 5px 4px rgb(0, 0, 0);
+    transition-duration: 1s;
+}
+
+.sections h2:hover{
+    box-shadow: -10px 5px 4px rgb(0, 0, 0);
+    transition-duration: 1s;
+}
+
 .menuItemGridBootstrap{
     margin-top: 30px;
     margin-bottom: 30px;
@@ -335,6 +345,13 @@ a:hover{
     border: 5px black solid;
     border-radius: 40px;
     box-shadow: -10px 5px 4px grey;
+    transition: 0.5s;
+}
+
+.menuItemGridBootstrap:hover{
+    transform: scale(1.02);
+    box-shadow: -10px 5px 4px rgb(0, 0, 0);
+    transition: all 0.5s ease-in-out;
 }
 
 .menuItemImg img{
@@ -662,7 +679,7 @@ section{
 
     /*Nota: Al agregar el CDN se me desacomodaron un poco los márgenes y se ve un poco mal especialmente en mobile */
 
-    .sections h1:hover{
+    /* .sections h1:hover{
         box-shadow: -10px 5px 4px rgb(0, 0, 0);
         transition-duration: 1s;
     }
@@ -670,7 +687,7 @@ section{
     .sections h2:hover{
         box-shadow: -10px 5px 4px rgb(0, 0, 0);
         transition-duration: 1s;
-    }
+    } */
 
     .menuItemGridBootstrap{
         margin-top: 30px;
@@ -711,12 +728,6 @@ section{
         align-self: flex-end;
     } 
 
-    .menuItemGridBootstrap:hover{
-        transform: scale(1.02);
-        box-shadow: -10px 5px 4px rgb(0, 0, 0);
-        transition: all 0.5s ease-in-out;
-    }
-    
     .menuItemTextReverse{
         padding-left: 3em; 
         padding-right: 3em;
