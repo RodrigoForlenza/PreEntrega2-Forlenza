@@ -7,8 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./imgs/icons8-sushi-de-salmón-50.svg">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/styles.css">
     <title>Home | Ohashi</title>
+    <meta name="description" content="Ohashi, el hogar de la cocina tradicional japonesa en Buenos Aires. Descubrí lo mejor de la cocina asiática. Elaboración propia.">
+
 </head>
 
 <body>
@@ -17,84 +19,69 @@
 
         <header>
 
+            <nav class="navbar navbar-expand-md navbar-light">
 
-            <div class="headerDesktop">
-
-                <div class="iconoSushi">
-                    <a href="index.html">
-                        <img src="./imgs/icons8-sushi-de-salmón-50.svg" width="50px" height="50px" alt="icono de sushi">
-                    </a>
-
-                    <div class="iconoSushiTextoDesktop">
-                        <b>Ohashi</b>
-                        <p>Comida Japonesa</p>
-                    </div>
-                </div>
-
-                <nav>
-                    <ul>
-                        <li>
-                            <a href="index.html">Inicio</a>
-                        </li>
-                        <li>
-                            <a href="./sections/entradas.html">Entradas</a>
-                        </li>
-                        <li>
-                            <a href="./sections/especialidades.html">Especialidades</a>
-                        </li>
-                        <li>
-                            <a href="./sections/postres.html">Postres</a>
-                        </li>
-                        <li>
-                            <a href="./sections/contacto.html">Contacto</a>
-                        </li>
-                    </ul>
-                </nav>
-
-                <div>
-                    <div class="iconoUsuarioCarrito">
-                        <a href="">
-                            <img src="./imgs/icons8-user-48.svg" width="40px" alt="icono de usuario">
+                <div class="container-fluid navigation">
+                
+                    <div class="navbar-brand iconoSushi">
+                        <a href="index.html">
+                            <img src="./imgs/icons8-sushi-de-salmón-50.svg" class="imgIconoSushi" alt="icono de sushi">
                         </a>
 
-                        <a href="">
-                            <img src="./imgs/icons8-carrito-de-compras-48-_1_.svg" width="40px" alt="icono de carrito">
-                        </a>
+                        <div class="iconoSushiTexto">
+                            <b>Ohashi</b>
+                            <p>Comida Japonesa</p>
+                        </div>
                     </div>
-                </div>
+
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="linksNav navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./sections/entradas.html">Entradas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./sections/especialidades.html">Especialidades</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./sections/postres.html">Postres</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./sections/contacto.html">Contacto</a>
+                        </li>
+                        </ul>
+
+                    <div>
+                        <div class="iconoUsuarioCarrito">
+                            <a href="">
+                                <img src="./imgs/icons8-user-48.svg" width="40px" alt="icono de usuario">
+                            </a>
+    
+                            <a href="">
+                                <img src="./imgs/icons8-carrito-de-compras-48-_1_.svg" width="40px" alt="icono de carrito">
+                            </a>
+                        </div>
+                    </div>
 
             </div>
 
-
-        <div class="headerMobile">
-        
-            <div class="iconoSushi">
-                <div class="iconoSushiLink">
-                    <a href="index.html">
-                        <img src="./imgs/icons8-sushi-de-salmón-50.svg" width="50px" height="50px" alt="icono de sushi">
-                    </a>
-                </div>
-        
-                <div class="iconoSushiTextoMobile">
-                    <b>Ohashi</b>
-                    <p>Comida Japonesa</p>
-                </div>
-            </div>
-
-
-            <nav>
-                <div class="navMobileDropDown">
-                    <img src="./imgs/hamburger.svg" alt="">
-                </div>
-            </nav>
-        
         </div>
+
+    </nav>
 
         </header>
 
+
+
         <main>
 
-            <!-- Carousel de imágenes, por ahora sin funcionalidad  -->
+            <!-- Carousel de imágenes -->
             
             <section class="carouselContainer">
 
@@ -102,13 +89,13 @@
                     <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade" data-bs-ride="carousel">
                         <div class="carousel-inner">
                         <div class="carousel-item active" data-interval="4000">
-                            <img src="./imgs/pexels-horizon-content-3763816.jpg" class="d-block w-100" alt="...">
+                            <img src="./imgs/pexels-horizon-content-3763816.jpg" class="d-block w-100" alt="Plato de sushi y sashimi visto desde arriba sobre fondo negro">
                         </div>
                         <div class="carousel-item" data-interval="4000">
-                            <img src="./imgs/pexels-alleksana-4224211_16x7.jpg" class="d-block w-100" alt="...">
+                            <img src="./imgs/pexels-alleksana-4224211_16x7.jpg" class="d-block w-100" alt="Plato de Ramen visto desde arriba sobre fondo negro">
                         </div> 
                         <div class="carousel-item" data-interval="4000">
-                            <img src="./imgs/pexels-cottonbro-3338537.jpg" class="d-block w-100" alt="...">
+                            <img src="./imgs/pexels-cottonbro-3338537.jpg" class="d-block w-100" alt="Plato de carne y vegetales visto desde arriba sobre fondo negro">
                         </div>
                         </div>
                     </div>
@@ -118,13 +105,13 @@
                     <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade" data-bs-ride="carousel">
                         <div class="carousel-inner">
                         <div class="carousel-item active" data-interval="4000" >
-                            <img src="./imgs/pexels-horizon-content-3763816_15x16.jpg" class="d-block w-100 mobileImg" alt="...">
+                            <img src="./imgs/pexels-horizon-content-3763816_15x16.jpg" class="d-block w-100 mobileImg" alt="Plato de sushi y sashimi visto desde arriba sobre fondo negro">
                         </div>
                         <div class="carousel-item" data-interval="4000">
-                            <img src="./imgs/pexels-alleksana-4224211_15x16.jpg" class="d-block w-100 mobileImg" alt="...">
+                            <img src="./imgs/pexels-alleksana-4224211_15x16.jpg" class="d-block w-100 mobileImg" alt="Plato de Ramen visto desde arriba sobre fondo negro">
                         </div>
                         <div class="carousel-item" data-interval="4000">
-                            <img src="./imgs/pexels-cottonbro-3338537_15x16.jpg" class="d-block w-100" alt="...">
+                            <img src="./imgs/pexels-cottonbro-3338537_15x16.jpg" class="d-block w-100" alt="Plato de carne y vegetales visto desde arriba sobre fondo negro">
                         </div>
                         </div>
                     </div>
@@ -139,7 +126,7 @@
 
                 <div class="iconoSushiSeparador">
                     <a href="index.html">
-                        <img src="./imgs/icons8-sushi-de-salmón-50.svg" width="50px" height="50px" alt="icono de sushi">
+                        <img src="./imgs/icons8-sushi-de-salmón-50.svg" class="imgIconoSushiSeparador" alt="icono de sushi">
                     </a>
                     <b>Ohashi</b>
                 </div>
@@ -163,32 +150,32 @@
                     <div class="row">
                     
                         <div class="p-2 col-lg-3 col-md-3 col-sm-6 col-6">
-                            <img src="./imgs/istockphoto-511793034_9x8.jpg" class="img-fluid imgMosaico" width="500px" height="500px" alt="icono de sushi">
+                            <img src="./imgs/istockphoto-511793034_9x8.jpg" class="img-fluid imgMosaico" alt="Plato de Ramen visto desde arriba sobre mesa de madera">
                         </div>
                         <div class="p-2 col-lg-3 col-md-3 col-sm-6 col-6">
-                            <img src="./imgs/pexels-cottonbro-3338537_9x8.jpg" class="img-fluid imgMosaico" width="500px" height="500px" alt="icono de sushi">
+                            <img src="./imgs/pexels-cottonbro-3338537_9x8.jpg" class="img-fluid imgMosaico" alt="Plato de carne y vegetales visto desde arriba sobre fondo negro">
                         </div>
                         <div class="p-2 col-lg-3 col-md-3 col-sm-6 col-6">
-                            <img src="./imgs/pexels-syed-muhammad-afifi-4110421_9x8.jpg" class="img-fluid imgMosaico" width="500px" height="500px" alt="icono de sushi">
+                            <img src="./imgs/pexels-syed-muhammad-afifi-4110421_9x8.jpg" class="img-fluid imgMosaico" alt="Plato de Ramen visto desde arriba sobre fondo blanco">
                         </div>
                         <div class="p-2 col-lg-3 col-md-3 col-sm-6 col-6">
-                            <img src="./imgs/istockphoto-697120198-612x612.jpg" class="img-fluid imgMosaico" width="500px" height="500px" alt="icono de sushi">
+                            <img src="./imgs/istockphoto-697120198-612x612.jpg" class="img-fluid imgMosaico" alt="Plato de Ramen visto desde arriba sobre mantel individual">
                         </div>
                     </div>
 
                     <div class="row ">
                         
                         <div class="p-2 col-lg-3 col-md-3 col-sm-6 col-6">
-                            <img src="./imgs/pexels-rachel-claire-5531482_9x8.jpg" class="img-fluid imgMosaico" width="500px" height="500px" alt="icono de sushi">
+                            <img src="./imgs/pexels-rachel-claire-5531482_9x8.jpg" class="img-fluid imgMosaico" alt="Plato de Ramen visto desde arriba sobre mesa de restorán">
                         </div>
                         <div class="p-2 col-lg-3 col-md-3 col-sm-6 col-6">
-                            <img src="./imgs/istockphoto-183373176_9x8.jpg" class="img-fluid imgMosaico" width="500px" height="500px" alt="icono de sushi">
+                            <img src="./imgs/istockphoto-183373176_9x8.jpg" class="img-fluid imgMosaico" alt="Plato de fideos Sobá visto desde arriba con acompañamiento de sopa y verduras">
                         </div>
                         <div class="p-2 col-lg-3 col-md-3 col-sm-6 col-6">
-                            <img src="./imgs/istockphoto-840781644-9x8.jpg" class="img-fluid imgMosaico" width="500px" height="500px" alt="icono de sushi">
+                            <img src="./imgs/istockphoto-840781644-9x8.jpg" class="img-fluid imgMosaico" alt="Plato de Ramen visto desde arriba sobre fondo negro">
                         </div>
                         <div class="p-2 col-lg-3 col-md-3 col-sm-6 col-6">
-                            <img src="./imgs/pexels-quang-anh-ha-nguyen-884600_9x8.jpg" class="img-fluid imgMosaico" width="500px" height="500px" alt="icono de sushi">
+                            <img src="./imgs/pexels-quang-anh-ha-nguyen-884600_9x8.jpg" class="img-fluid imgMosaico" alt="Plato de Ramen visto desde arriba sobre mantel individual">
                         </div>
                     </div>
 
@@ -229,10 +216,10 @@
                 </div>
 
                 <div class="topFooterDivTwo">
-                    <a href="https://www.instagram.com/" target="_blank"><img class="logosFooter" src="./imgs/icons8-instagram.svg" alt="instagram logo"></a>
-                    <a href="https://twitter.com/" target="_blank"><img class="logosFooter" src="./imgs/icons8-twitter.svg" alt="twitter logo"></a>
-                    <a href="https://www.tiktok.com/" target="_blank"><img class="logosFooter" src="./imgs/icons8-tik-tok.svg"  alt="tiktok logo"></a>
-                    <a href="https://www.facebook.com/" target="_blank"><img class="logosFooter" src="./imgs/icons8-facebook.svg" alt="facebook logo"></a>
+                    <a href="https://www.instagram.com/" target="_blank"><img class="logosFooter" src="./imgs/icons8-instagram.svg" alt="logo de instagram"></a>
+                    <a href="https://twitter.com/" target="_blank"><img class="logosFooter" src="./imgs/icons8-twitter.svg" alt="logo de twitter"></a>
+                    <a href="https://www.tiktok.com/" target="_blank"><img class="logosFooter" src="./imgs/icons8-tik-tok.svg"  alt="logo de tiktok"></a>
+                    <a href="https://www.facebook.com/" target="_blank"><img class="logosFooter" src="./imgs/icons8-facebook.svg" alt="logo de facebook"></a>
                 </div>
 
             </section>

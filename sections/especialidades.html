@@ -6,9 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../imgs/icons8-sushi-de-salmón-50.svg">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/styles.css">
 
     <title>Especialidades | Ohashi</title>
+    <meta name="description" content="Ohashi, el hogar de la cocina tradicional japonesa en Buenos Aires. Descubrí nuestros platos principales y especialidades de la casa.">
+
 </head>
 
 <body>
@@ -18,40 +20,43 @@
 
 <header>
 
-    <header>
+    <nav class="navbar navbar-expand-md navbar-light">
 
-        <div class="headerDesktop">
-
-            <div class="iconoSushi">
-                <a href="../index.html">
-                    <img src="../imgs/icons8-sushi-de-salmón-50.svg" width="50px" height="50px" alt="icono de sushi">
+        <div class="container-fluid navigation">
+        
+            <div class="navbar-brand iconoSushi">
+                <a href="index.html">
+                    <img src="../imgs/icons8-sushi-de-salmón-50.svg" class="imgIconoSushi" alt="icono de sushi">
                 </a>
 
-                <div class="iconoSushiTextoDesktop">
+                <div class="iconoSushiTexto">
                     <b>Ohashi</b>
                     <p>Comida Japonesa</p>
                 </div>
             </div>
 
-            <nav>
-                <ul>
-                    <li>
-                        <a href="../index.html">Inicio</a>
-                    </li>
-                    <li>
-                        <a href="entradas.html">Entradas</a>
-                    </li>
-                    <li>
-                        <a href="especialidades.html">Especialidades</a>
-                    </li>
-                    <li>
-                        <a href="postres.html">Postres</a>
-                    </li>
-                    <li>
-                        <a href="contacto.html">Contacto</a>
-                    </li>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="linksNav navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="entradas.html">Entradas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="especialidades.html">Especialidades</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="postres.html">Postres</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contacto.html">Contacto</a>
+                </li>
                 </ul>
-            </nav>
 
             <div>
                 <div class="iconoUsuarioCarrito">
@@ -65,32 +70,11 @@
                 </div>
             </div>
 
-        </div>
-
-
-
-    <div class="headerMobile">
-    
-        <div class="iconoSushi">
-            <div class="iconoSushiLink">
-                <a href="../index.html">
-                <img src="../imgs/icons8-sushi-de-salmón-50.svg" width="50px" height="50px" alt="icono de sushi">
-                </a>
-            </div>
-
-            <div class="iconoSushiTextoMobile">
-                <b>Ohashi</b>
-                <p>Comida Japonesa</p>
-            </div> 
-        </div>
-
-        <nav>
-            <div class="navMobileDropDown">
-                <img src="../imgs/hamburger.svg" alt="">
-            </div>
-        </nav>
-    
     </div>
+
+</div>
+
+</nav>
 
 
 </header>
@@ -120,18 +104,20 @@
 
         <div class="row">
             <div class="col-lg-6 col-md-12 col-sm-12 menuItemImg">
-                <img src="../imgs/pexels-alleksana-4224211 (1).jpg" class="img-fluid" alt="">
+                <img src="../imgs/pexels-alleksana-4224211_3x2.jpg" class="img-fluid" alt="Plato de Ramen visto desde arriba sobre mesa de color negro">
             </div>
             <div class="col-lg-6 col-md-12 col-sm-12 menuItemText">                       
                 <h3>Miso Ramen</h3>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error corporis esse atque velit voluptatum. Distinctio quis, quos praesentium vero vel obcaecati sed, iusto sequi nostrum illo alias tempore officia maiores. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error corporis esse atque velit voluptatum. Distinctio quis, quos praesentium vero vel obcaecati sed, iusto sequi nostrum illo alias tempore officia maiores. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error corporis esse atque velit voluptatum. Distinctio quis, quos praesentium vero vel obcaecati sed, iusto sequi nostrum illo alias tempore officia maiores.</p>
-                <p>Precio: $50</p>                
+                <p>Porción grande de Miso Ramen.</p>
+                <p>Caldo relativamente espeso elaborado a base de pasta de miso, vegetales y concentrado de cerdo, originaria de Hokkaido (isla más al norte de Japón) y típica de época invernal. El miso es una pasta de semilla de soja fermentada, muy tradicional y ubicua en la cocina japonesa. Plato robusto, sabroso y rico en proteinas y minerales. 
+                <p>Servido con trozos de cerdo (<i>chashu</i>), fideos al huevo (blandos, de grosor medio), verduras salteadas (puerro, pak choi, hongos <i>shiitake</i>), huevo y <i>menma</i> (brotes de bambú fermentados).</p>
+                <p>Precio: $1000</p>                
             </div>
         </div>
     
         <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12 plusIcon">
-            <img src="../imgs/icons8-más.svg" width="30px" height="30px" class="imgPlusIcon" alt="ícono de agregar al carrito">
+            <img src="../imgs/icons8-más.svg" class="imgPlusIcon" alt="ícono de agregar al carrito">
             </div>
         </div>
     
@@ -143,17 +129,19 @@
         <div class="row">
             <div class="col-lg-6 col-md-12 col-sm-12 menuItemTextReverse">
                 <h3>Shoyu Ramen</h3>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error corporis esse atque velit voluptatum. Distinctio quis, quos praesentium vero vel obcaecati sed, iusto sequi nostrum illo alias tempore officia maiores. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error corporis esse atque velit voluptatum. Distinctio quis, quos praesentium vero vel obcaecati sed, iusto sequi nostrum illo alias tempore officia maiores. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error corporis esse atque velit voluptatum. Distinctio quis, quos praesentium vero vel obcaecati sed, iusto sequi nostrum illo alias tempore officia maiores.</p>
-                <p>Precio: $50</p>               
+                <p>Porción grande de Shoyu Ramen.</p>
+                <p>Caldo relativamente ligero elaborado a base de salsa de soja (<i>shoyu</i> significa salsa de soja en japonés), vegetales y concentrado de pollo. Incluye <i>konbu</i> (algas) y toques de <i>niboshi</i> (sardinas desecadas) para dar profundidad al caldo.</p>   
+                <p>Servido con trozos de cerdo (<i>chashu</i>) marinados en salsa de soja, fideos al huevo (no muy blandos, de grosor medio, no absorbentes), verduras salteadas (puerro, pak choi, hongos <i>shiitake</i>), <i>menma</i> (brotes de bambú fermentados) y semillas de sésamo.</p>
+                <p>Precio: $1000</p>             
             </div>
             <div class="col-lg-6 col-md-12 col-sm-12 menuItemImg">
-                <img src="../imgs/istockphoto-511793034-612x612.jpg" class="img-fluid" alt="">
+                <img src="../imgs/istockphoto-511793034-612x612.jpg" class="img-fluid" alt="Plato de Ramen con acompañamiento de verduras visto desde arriba sobre mesa de madera">
             </div>
         </div>
 
         <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12 plusIcon">
-            <img src="../imgs/icons8-más.svg" width="30px" height="30px" class="imgPlusIcon" alt="ícono de agregar al carrito">
+            <img src="../imgs/icons8-más.svg" class="imgPlusIcon" alt="ícono de agregar al carrito">
             </div>
         </div>
 
@@ -165,18 +153,20 @@
 
         <div class="row">
             <div class="col-lg-6 col-md-12 col-sm-12 menuItemImg">
-                <img src="../imgs/pexels-quang-anh-ha-nguyen-884600.jpg" class="img-fluid" alt="">
+                <img src="../imgs/pexels-quang-anh-ha-nguyen-884600.jpg" class="img-fluid" alt="Plato de Ramen visto desde arriba sobre mesa de madera">
             </div>
             <div class="col-lg-6 col-md-12 col-sm-12 menuItemText">                       
                 <h3>Shio Ramen</h3>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error corporis esse atque velit voluptatum. Distinctio quis, quos praesentium vero vel obcaecati sed, iusto sequi nostrum illo alias tempore officia maiores. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error corporis esse atque velit voluptatum. Distinctio quis, quos praesentium vero vel obcaecati sed, iusto sequi nostrum illo alias tempore officia maiores. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error corporis esse atque velit voluptatum. Distinctio quis, quos praesentium vero vel obcaecati sed, iusto sequi nostrum illo alias tempore officia maiores.</p>
-                <p>Precio: $50</p>          
+                <p>Porción grande de Shio Ramen.</p>
+                <p>Caldo ligero elaborado a base de sal (<i>shio</i> significa sal en japonés), <i>konbu</i> (algas), hongos <i>shiitake</i> y concentrado de pollo. Plato más suave y transparente, caldo abundante y rico en proteinas y minerales.
+                <p>Servido con trozos de cerdo (<i>chashu</i>) marinados en salsa de soja, fideos al huevo (no muy blandos, de grosor fino), verduras salteadas (puerro, pak choi), cebolla de verdeo, <i>menma</i> (brotes de bambú fermentados) y semillas de sésamo.</p>
+                <p>Precio: $1000</p>          
             </div>
         </div>
     
         <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12 plusIcon">
-            <img src="../imgs/icons8-más.svg" width="30px" height="30px" class="imgPlusIcon" alt="ícono de agregar al carrito">
+            <img src="../imgs/icons8-más.svg" class="imgPlusIcon" alt="ícono de agregar al carrito">
             </div>
         </div>
     
@@ -188,17 +178,19 @@
         <div class="row">
             <div class="col-lg-6 col-md-12 col-sm-12 menuItemTextReverse">
                 <h3>Tsukemen Ramen</h3>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error corporis esse atque velit voluptatum. Distinctio quis, quos praesentium vero vel obcaecati sed, iusto sequi nostrum illo alias tempore officia maiores. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error corporis esse atque velit voluptatum. Distinctio quis, quos praesentium vero vel obcaecati sed, iusto sequi nostrum illo alias tempore officia maiores. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error corporis esse atque velit voluptatum.</p>
-                <p>Precio: $50</p>            
+                <p>Porción grande de Tsukemen Ramen.</p>
+                <p>El <i>Tsukemen</i> ("Ramen para mojar") es un ramen con un caldo espeso elaborado a base de carne de res con la particularidad de que los fideos vienen por separado y deben mojarse en el caldo antes de cada bocado. Los fideos son elaborados a base de harina de trigo y son gruesos, muy abundantes y de consistencia más elástica.
+                <p>Servido con trozos de cerdo (<i>chashu</i>) marinados en salsa de soja, huevos cocidos, algas nori, <i>kamaboko</i> (pastel de pescado) y cebolla de verdeo.</p>
+                <p>Precio: $1000</p>              
             </div>
             <div class="col-lg-6 col-md-12 col-sm-12 menuItemImg">
-                <img src="../imgs/pexels-syed-muhammad-afifi-4110421.jpg" class="img-fluid" alt="">
+                <img src="../imgs/Tsukemen_at_a_Tokyo_restaurant (1).jpg" class="img-fluid" alt="Plato de Ramen y plato de fideos vistos desde arriba sobre mesa de restorán">
             </div>
         </div>
 
         <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12 plusIcon">
-            <img src="../imgs/icons8-más.svg" width="30px" height="30px" class="imgPlusIcon" alt="ícono de agregar al carrito">
+            <img src="../imgs/icons8-más.svg" class="imgPlusIcon" alt="ícono de agregar al carrito">
             </div>
         </div>
 
@@ -209,18 +201,20 @@
 
         <div class="row">
             <div class="col-lg-6 col-md-12 col-sm-12 menuItemImg">
-                <img src="../imgs/pexels-rodnae-productions-6646349.jpg" class="img-fluid" alt="">
+                <img src="../imgs/pexels-rodnae-productions-6646349.jpg" class="img-fluid" alt="Plato de Ramen visto desde arriba sobre fondo blanco">
             </div>
             <div class="col-lg-6 col-md-12 col-sm-12 menuItemText">                       
                 <h3>Tonkotsu Ramen</h3>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error corporis esse atque velit voluptatum. Distinctio quis, quos praesentium vero vel obcaecati sed, iusto sequi nostrum illo alias tempore officia maiores. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error corporis esse atque velit voluptatum. Distinctio quis, quos praesentium vero vel obcaecati sed, iusto sequi nostrum illo alias tempore officia maiores. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error corporis esse atque velit voluptatum.</p>
-                <p>Precio: $50</p>      
+                <p>Porción grande de Tonkotsu Ramen.</p>
+                <p>Caldo muy espeso elaborado a base de hueso de cerdo y vegetales típico de época invernal. La cocción por muchas horas resulta en un plato robusto y cremoso, muy sabroso y rico en proteinas. 
+                <p>Servido con trozos de cerdo (<i>chashu</i>), fideos al huevo (blandos, de grosor medio), verduras (cebolla, ajo, puerro, jengibre, cebolla de verdeo, hongos <i>shiitake</i>), huevo, maiz y <i>menma</i> (brotes de bambú fermentados).</p>
+                <p>Precio: $1000</p>     
             </div>
         </div>
     
         <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12 plusIcon">
-            <img src="../imgs/icons8-más.svg" width="30px" height="30px" class="imgPlusIcon" alt="ícono de agregar al carrito">
+            <img src="../imgs/icons8-más.svg" class="imgPlusIcon" alt="ícono de agregar al carrito">
             </div>
         </div>
     
@@ -231,17 +225,18 @@
         <div class="row">
             <div class="col-lg-6 col-md-12 col-sm-12 menuItemTextReverse">
                 <h3>Soba</h3>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error corporis esse atque velit voluptatum. Distinctio quis, quos praesentium vero vel obcaecati sed, iusto sequi nostrum illo alias tempore officia maiores. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error corporis esse atque velit voluptatum. Distinctio quis, quos praesentium vero vel obcaecati sed, iusto sequi nostrum illo alias tempore officia maiores. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error corporis esse atque velit voluptatum.</p>
-                <p>Precio: $50</p>        
+                <p>Fideos de trigo sarraceno (<i>soba</i>) servidos frios con acompañamiento de caldo ligero elaborado a base de salsa de soja (<i>shoyu</i>), vegetales y concentrado de pollo. Incluye <i>konbu</i> (algas) y toques de <i>niboshi</i> (sardinas desecadas).</p>
+                <p>Servido con trozos de cerdo (<i>chashu</i>) marinados en salsa de soja, verduras (puerro, pak choi, cebollas de verdeo, hongos <i>shiitake</i>) y <i>menma</i> (brotes de bambú fermentados).</p>
+                <p>Precio: $1000</p>      
             </div>
             <div class="col-lg-6 col-md-12 col-sm-12 menuItemImg">
-                <img src="../imgs/istockphoto-183373176-612x612.jpg" class="img-fluid" alt="">
+                <img src="../imgs/istockphoto-183373176-612x612.jpg" class="img-fluid" alt="Plato de fideos Sobá visto desde arriba con acompañamiento de sopa y verduras">
             </div>
         </div>
 
         <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12 plusIcon">
-            <img src="../imgs/icons8-más.svg" width="30px" height="30px" class="imgPlusIcon" alt="ícono de agregar al carrito">
+            <img src="../imgs/icons8-más.svg" class="imgPlusIcon" alt="ícono de agregar al carrito">
             </div>
         </div>
 
@@ -251,18 +246,19 @@
 
         <div class="row">
             <div class="col-lg-6 col-md-12 col-sm-12 menuItemImg">
-                <img src="../imgs/istockphoto-183801916-612x612.jpg" class="img-fluid" alt="">
+                <img src="../imgs/istockphoto-183801916-612x612.jpg" class="img-fluid" alt="Plato de Ramen con fideos Udón visto desde arriba sobre tabla de madera">
             </div>
             <div class="col-lg-6 col-md-12 col-sm-12 menuItemText">                       
                 <h3>Udon</h3>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error corporis esse atque velit voluptatum. Distinctio quis, quos praesentium vero vel obcaecati sed, iusto sequi nostrum illo alias tempore officia maiores. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error corporis esse atque velit voluptatum. Distinctio quis, quos praesentium vero vel obcaecati sed, iusto sequi nostrum illo alias tempore officia maiores. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error corporis esse atque velit voluptatum.</p>
-                <p>Precio: $50</p>
+                <p>Fideos gruesos de trigo (<i>udon</i>) servidos frios con acompañamiento de caldo ligero elaborado a base de salsa de soja (<i>shoyu</i>), vegetales y concentrado de pollo. Incluye <i>konbu</i> (algas) y toques de <i>niboshi</i> (sardinas desecadas).</p>
+                <p>Servido con trozos de cerdo (<i>chashu</i>) marinados en salsa de soja, verduras (puerro, pak choi, cebollas de verdeo, hongos <i>shiitake</i>) y <i>menma</i> (brotes de bambú fermentados).</p>
+                <p>Precio: $1000</p> 
             </div>
         </div>
     
         <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12 plusIcon">
-            <img src="../imgs/icons8-más.svg" width="30px" height="30px" class="imgPlusIcon" alt="ícono de agregar al carrito">
+            <img src="../imgs/icons8-más.svg" class="imgPlusIcon" alt="ícono de agregar al carrito">
             </div>
         </div>
     
@@ -273,17 +269,18 @@
         <div class="row">
             <div class="col-lg-6 col-md-12 col-sm-12 menuItemTextReverse">
                 <h3>Spicy Ramen</h3>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error corporis esse atque velit voluptatum. Distinctio quis, quos praesentium vero vel obcaecati sed, iusto sequi nostrum illo alias tempore officia maiores. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error corporis esse atque velit voluptatum. Distinctio quis, quos praesentium vero vel obcaecati sed, iusto sequi nostrum illo alias tempore officia maiores. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error corporis esse atque velit voluptatum.</p>
-                <p>Precio: $50</p>      
+                <p>Caldo picante relativamente espeso elaborado a base de salsa de ajíes <i>togarashi</i>, vegetales y concentrado de cerdo, típico de época invernal. Plato robusto, sabroso y rico en proteinas y minerales. 
+                <p>Servido con trozos de cerdo (<i>chashu</i>), fideos al huevo (blandos, de grosor medio), verduras salteadas (puerro, pak choi, hongos <i>shiitake</i>), jalapeños, salsa de ajo, huevo y <i>menma</i> (brotes de bambú fermentados).</p>
+                <p>Precio: $1000</p>    
             </div>
             <div class="col-lg-6 col-md-12 col-sm-12 menuItemImg">
-                <img src="../imgs/pexels-rachel-claire-5531482.jpg" class="img-fluid" alt="">
+                <img src="../imgs/pexels-rachel-claire-5531482.jpg" class="img-fluid" alt="Platos de Ramen y bebidas vistos desde arriba sobre mesa de restorán">
             </div>
         </div>
 
         <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12 plusIcon">
-            <img src="../imgs/icons8-más.svg" width="30px" height="30px" class="imgPlusIcon" alt="ícono de agregar al carrito">
+            <img src="../imgs/icons8-más.svg" class="imgPlusIcon" alt="ícono de agregar al carrito">
             </div>
         </div>
 
@@ -293,18 +290,19 @@
 
         <div class="row">
             <div class="col-lg-6 col-md-12 col-sm-12 menuItemImg">
-                <img src="../imgs/istockphoto-840781644-612x612.jpg" class="img-fluid" alt="">
+                <img src="../imgs/istockphoto-840781644-612x612.jpg" class="img-fluid" alt="Plato de Ramen visto desde arriba sobre bandeja negra">
             </div>
             <div class="col-lg-6 col-md-12 col-sm-12 menuItemText">                       
                 <h3>Vegan Ramen</h3>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error corporis esse atque velit voluptatum. Distinctio quis, quos praesentium vero vel obcaecati sed, iusto sequi nostrum illo alias tempore officia maiores. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error corporis esse atque velit voluptatum. Distinctio quis, quos praesentium vero vel obcaecati sed, iusto sequi nostrum illo alias tempore officia maiores. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error corporis esse atque velit voluptatum.</p>
-                <p>Precio: $50</p>
+                <p>Caldo vegano relativamente espeso elaborado a base de pasta de miso, vegetales y hongos hongos <i>shiitake</i>. El miso es una pasta de semilla de soja fermentada, muy tradicional y ubicua en la cocina japonesa. Plato robusto, sabroso y rico en proteinas y minerales. 
+                <p>Servido con trozos de cerdo (<i>chashu</i>), fideos al huevo (blandos, de grosor medio), verduras (cebolla, ajo, puerro, jengibre, cebolla de verdeo, hongos <i>shiitake</i>), tofu, maiz y <i>menma</i> (brotes de bambú fermentados).</p>
+                <p>Precio: $1000</p>  
             </div>
         </div>
     
         <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12 plusIcon">
-            <img src="../imgs/icons8-más.svg" width="30px" height="30px" class="imgPlusIcon" alt="ícono de agregar al carrito">
+            <img src="../imgs/icons8-más.svg" class="imgPlusIcon" alt="ícono de agregar al carrito">
             </div>
         </div>
     
@@ -322,7 +320,7 @@
 
         <div class="row">
             <div class="col-lg-6 col-md-12 col-sm-12 menuItemImg">
-                <img src="../imgs/Maki.jpg" class="img-fluid" alt="">
+                <img src="../imgs/Maki.jpg" class="img-fluid" alt="Seis rolls de sushi vistos desde arriba">
             </div>
             <div class="col-lg-6 col-md-12 col-sm-12 menuItemText">                       
                 <h3>Maki Sushi</h3>
@@ -333,7 +331,7 @@
     
         <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12 plusIcon">
-            <img src="../imgs/icons8-más.svg" width="30px" height="30px" class="imgPlusIcon" alt="ícono de agregar al carrito">
+            <img src="../imgs/icons8-más.svg" class="imgPlusIcon" alt="ícono de agregar al carrito">
             </div>
         </div>
     
@@ -348,13 +346,13 @@
                 <p>Precio: $50</p>  
             </div>
             <div class="col-lg-6 col-md-12 col-sm-12 menuItemImg">
-                <img src="../imgs/Nigiri.jpg" class="img-fluid" alt="">
+                <img src="../imgs/Nigiri.jpg" class="img-fluid" alt="Nigiris de salmón con acompañamiento de wasabi sobre mesa de madera">
             </div>
         </div>
 
         <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12 plusIcon">
-            <img src="../imgs/icons8-más.svg" width="30px" height="30px" class="imgPlusIcon" alt="ícono de agregar al carrito">
+            <img src="../imgs/icons8-más.svg" class="imgPlusIcon" alt="ícono de agregar al carrito">
             </div>
         </div>
 
@@ -364,7 +362,7 @@
 
         <div class="row">
             <div class="col-lg-6 col-md-12 col-sm-12 menuItemImg">
-                <img src="../imgs/Sashimi.jpg" class="img-fluid" alt="">
+                <img src="../imgs/Sashimi.jpg" class="img-fluid" alt="Porción de sashimi y vegetales sobre bandeja negra">
             </div>
             <div class="col-lg-6 col-md-12 col-sm-12 menuItemText">                       
                 <h3>Sashimi</h3>
@@ -375,7 +373,7 @@
     
         <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12 plusIcon">
-            <img src="../imgs/icons8-más.svg" width="30px" height="30px" class="imgPlusIcon" alt="ícono de agregar al carrito">
+            <img src="../imgs/icons8-más.svg" class="imgPlusIcon" alt="ícono de agregar al carrito">
             </div>
         </div>
     
@@ -390,13 +388,13 @@
                 <p>Precio: $50</p>
             </div>
             <div class="col-lg-6 col-md-12 col-sm-12 menuItemImg">
-                <img src="../imgs/Uramaki.jpg" class="img-fluid" alt="">
+                <img src="../imgs/Uramaki.jpg" class="img-fluid" alt="Porción de rolls uramaki sobre mesa de restorán">
             </div>
         </div>
 
         <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12 plusIcon">
-            <img src="../imgs/icons8-más.svg" width="30px" height="30px" class="imgPlusIcon" alt="ícono de agregar al carrito">
+            <img src="../imgs/icons8-más.svg" class="imgPlusIcon" alt="ícono de agregar al carrito">
             </div>
         </div>
 
@@ -406,7 +404,7 @@
 
         <div class="row">
             <div class="col-lg-6 col-md-12 col-sm-12 menuItemImg">
-                <img src="../imgs/Temaki.jpg" class="img-fluid" alt="">
+                <img src="../imgs/Temaki.jpg" class="img-fluid" alt="Rollo temaki sobre bandeja blanca">
             </div>
             <div class="col-lg-6 col-md-12 col-sm-12 menuItemText">                       
                 <h3>Temaki</h3>
@@ -417,7 +415,7 @@
     
         <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12 plusIcon">
-            <img src="../imgs/icons8-más.svg" width="30px" height="30px" class="imgPlusIcon" alt="ícono de agregar al carrito">
+            <img src="../imgs/icons8-más.svg" class="imgPlusIcon" alt="ícono de agregar al carrito">
             </div>
         </div>
     
@@ -434,10 +432,10 @@
         </div>
 
         <div class="topFooterDivTwo">
-            <a href="https://www.instagram.com/" target="_blank"><img class="logosFooter" src="../imgs/icons8-instagram.svg" alt="instagram logo"></a>
-            <a href="https://twitter.com/" target="_blank"><img class="logosFooter" src="../imgs/icons8-twitter.svg" alt="twitter logo"></a>
-            <a href="https://www.tiktok.com/" target="_blank"><img class="logosFooter" src="../imgs/icons8-tik-tok.svg"  alt="tiktok logo"></a>
-            <a href="https://www.facebook.com/" target="_blank"><img class="logosFooter" src="../imgs/icons8-facebook.svg" alt="facebook logo"></a>
+            <a href="https://www.instagram.com/" target="_blank"><img class="logosFooter" src="../imgs/icons8-instagram.svg" alt="logo de instagram"></a>
+            <a href="https://twitter.com/" target="_blank"><img class="logosFooter" src="../imgs/icons8-twitter.svg" alt="logo de twitter"></a>
+            <a href="https://www.tiktok.com/" target="_blank"><img class="logosFooter" src="../imgs/icons8-tik-tok.svg"  alt="logo de tiktok"></a>
+            <a href="https://www.facebook.com/" target="_blank"><img class="logosFooter" src="../imgs/icons8-facebook.svg" alt="logo de facebook"></a>
         </div>
 
     </section>

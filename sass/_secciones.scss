@@ -1,0 +1,247 @@
+
+@mixin hoverTransition {
+    box-shadow: -10px 5px 4px rgb(0, 0, 0);
+    transition-duration: 1s;
+}
+
+.sections h1{
+    font-weight: bold;
+    text-align: center;
+    margin: 20px 0px 20px 0px;
+    box-shadow: -8px 5px 4px grey;
+    border-radius: 5px;
+    background-color: rgb(248, 190, 190);
+    transition: 0.5s ease;
+        &:hover{
+            @include hoverTransition;
+        }
+
+}
+
+.sections h2{
+    font-weight: bold;
+    text-align: left;
+    margin-top: 2em;
+    margin-left: 5em;
+    margin-bottom: 1em;
+    padding: 10px;
+    display: inline-block;
+    border-radius: 5px;
+    box-shadow: -8px 5px 4px grey;
+    background-color: rgb(252, 206, 206);
+    transition: 0.5s ease;
+        &:hover{
+            @include hoverTransition;
+        }
+}
+
+.menuItemGridBootstrap{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 30px;
+    background-color: rgb(243, 221, 148);
+    border-radius: 5px;
+    box-shadow: -9px 5px 4px grey;
+    transition: 0.5s;
+        &:hover{
+            transform: scale(1.02);
+            box-shadow: -9px 5px 4px rgb(0, 0, 0);
+            transition: all 0.5s ease-in-out;
+        }
+        
+}
+
+.menuItemText{
+    padding-left: 3em; 
+    padding-right: 3em;
+    display: flex;
+    flex-direction: column;
+        h3 {
+            border-bottom: 2px solid black;
+            font-weight: bold;
+            font-size: 3em;
+            margin-top: 1em;
+            margin-bottom: 0.5em;
+        }
+        p {
+            font-size: 1.5em;
+            margin-bottom: 0.5em;
+        }
+}
+
+.plusIcon{
+    text-align: right;
+    margin-top: 3em;
+}
+
+.imgPlusIcon{
+    width: 30px;
+    height: 30px;
+    transition: 0.5s ease;
+    &:hover{ 
+        cursor: pointer;
+        transform: scale(1.5) rotate(90deg);
+        transition-duration: 0.5s;
+        filter: invert(20%);
+    }
+}
+
+.menuItemTextReverse{
+
+        @extend .menuItemText;
+
+        img {
+            align-self: flex-end;
+        } 
+        h3 {
+            border-bottom: 2px solid black;
+            font-weight: bold;
+            font-size: 3em;
+            margin-bottom: 0.5em;
+        }
+        p {
+            font-size: 1.5em;
+            margin-bottom: 1.5em;
+        }
+        
+}
+
+
+.sectionContacto {
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+fieldset {
+    border: 3px black solid;
+    padding: 30px;
+    max-width: 100%;
+    margin-bottom: 3em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    box-shadow: -3px 5px 5px 3px rgba(0,0,0,0.37);
+    -webkit-box-shadow: -3px 5px 5px 3px rgba(0,0,0,0.37);
+    -moz-box-shadow: -3px 5px 5px 3px rgba(0,0,0,0.37);
+    }
+
+legend{
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+input{
+    margin-bottom: 20px;
+    padding: 7px;
+}
+
+input[type=checkbox] {
+    margin-top:20px;
+}
+
+input[type=submit] {
+    height: 50px;
+}
+
+
+@media(min-width:768px){
+    
+    .sectionContacto {
+        margin: 30px;
+        display: flex;
+        flex-direction: row;
+        align-self: start;
+        justify-content: space-evenly;
+    }
+
+    fieldset{
+        width: 100%;
+        }
+
+}
+
+
+
+@media(min-width:1024px){
+
+
+    .menuItemGridBootstrap{
+        background-color: rgb(243, 221, 148);
+        border-radius: 5px;
+        box-shadow: -10px 5px 4px grey;
+        transition: 0.5s ease;
+    }
+    
+    .menuItemImg img{
+        border: 2px black solid;
+    }
+    
+    .menuItemText{
+        padding-left: 3em; 
+        padding-right: 3em;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+            h3 {
+                font-weight: bold;
+                font-size: 3em;
+                margin-top: 0;
+                margin-bottom: 0.5em;
+            }
+            p {
+                font-size: 1.7em;
+                margin-bottom: 0.5em;
+            }
+    }
+
+    .menuItemTextReverse{
+        padding-left: 3em; 
+        padding-right: 3em;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+            h3 {
+                font-weight: bold;
+                font-size: 3em;
+                margin-bottom: 0.5em;
+            }
+            p {
+                font-size: 1.7em;
+                margin-bottom: 0.5em;
+            }
+    }
+
+}
+
+
+/* Grid-areas - Sections*/
+
+section{
+    grid-area: itemMenu;
+}
+
+.wrapperSections{
+
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "itemMenu"
+    "footer"
+    ;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

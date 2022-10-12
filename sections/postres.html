@@ -6,9 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../imgs/icons8-sushi-de-salmón-50.svg">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/styles.css">
 
     <title>Postres | Ohashi</title>
+    <meta name="description" content="Ohashi, el hogar de la cocina tradicional japonesa en Buenos Aires. Descubrí los mejores dulces y postres japoneses.">
+
 </head>
 <body>
 
@@ -17,81 +19,61 @@
 
     <header>
 
-        <div class="headerDesktop">
+        <nav class="navbar navbar-expand-md navbar-light">
 
-            <div class="iconoSushi">
-                <a href="../index.html">
-                    <img src="../imgs/icons8-sushi-de-salmón-50.svg" width="50px" height="50px" alt="icono de sushi">
-                </a>
-
-                <div class="iconoSushiTextoDesktop">
-                    <b>Ohashi</b>
-                    <p>Comida Japonesa</p>
-                </div>
-            </div>
-
-            <nav>
-                <ul>
-                    <li>
-                        <a href="../index.html">Inicio</a>
-                    </li>
-                    <li>
-                        <a href="entradas.html">Entradas</a>
-                    </li>
-                    <li>
-                        <a href="especialidades.html">Especialidades</a>
-                    </li>
-                    <li>
-                        <a href="postres.html">Postres</a>
-                    </li>
-                    <li>
-                        <a href="contacto.html">Contacto</a>
-                    </li>
-                </ul>
-            </nav>
-
-            <div>
-                <div class="iconoUsuarioCarrito">
-                    <a href="">
-                        <img src="../imgs/icons8-user-48.svg" width="40px" alt="icono de usuario">
+            <div class="container-fluid navigation">
+            
+                <div class="navbar-brand iconoSushi">
+                    <a href="index.html">
+                        <img src="../imgs/icons8-sushi-de-salmón-50.svg" class="imgIconoSushi" alt="icono de sushi">
                     </a>
 
-                    <a href="">
-                        <img src="../imgs/icons8-carrito-de-compras-48-_1_.svg" width="40px" alt="icono de carrito">
-                    </a>
+                    <div class="iconoSushiTexto">
+                        <b>Ohashi</b>
+                        <p>Comida Japonesa</p>
+                    </div>
                 </div>
-            </div>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="linksNav navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="entradas.html">Entradas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="especialidades.html">Especialidades</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="postres.html">Postres</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                    </ul>
+
+                <div>
+                    <div class="iconoUsuarioCarrito">
+                        <a href="">
+                            <img src="../imgs/icons8-user-48.svg" width="40px" alt="icono de usuario">
+                        </a>
+
+                        <a href="">
+                            <img src="../imgs/icons8-carrito-de-compras-48-_1_.svg" width="40px" alt="icono de carrito">
+                        </a>
+                    </div>
+                </div>
 
         </div>
 
-
-
-
-    <div class="headerMobile">
-    
-        <div class="iconoSushi">
-            <div class="iconoSushiLink">
-                <a href="../index.html">
-                <img src="../imgs/icons8-sushi-de-salmón-50.svg" width="50px" height="50px" alt="icono de sushi">
-                </a>
-            </div>
-    
-            <div class="iconoSushiTextoMobile">
-                <b>Ohashi</b>
-                <p>Comida Japonesa</p>
-            </div>
-        </div>
-
-
-        
-    
-        <nav>
-            <div class="navMobileDropDown">
-                <img src="../imgs/hamburger.svg" alt="">
-            </div>
-        </nav>
-    
     </div>
+
+</nav>
 
 
     </header>
@@ -110,7 +92,7 @@
 
             <div class="row">
                 <div class="col-lg-6 col-md-12 col-sm-12 menuItemImg">
-                    <img src="../imgs/dorayaki.jpg" class="img-fluid" alt="">
+                    <img src="../imgs/dorayaki.jpg" class="img-fluid" alt="Dos mitades de dorayaki sobre plato blanco">
                 </div>
                 <div class="col-lg-6 col-md-12 col-sm-12 menuItemText">                       
                     <h3>Dorayaki</h3>
@@ -121,7 +103,7 @@
 
             <div class="row">
                 <div class="col-lg-12 col-md-12 col-sm-12 plusIcon">
-                <img src="../imgs/icons8-más.svg" width="30px" height="30px" class="imgPlusIcon" alt="ícono de agregar al carrito">
+                <img src="../imgs/icons8-más.svg" class="imgPlusIcon" alt="ícono de agregar al carrito">
                 </div>
             </div>
 
@@ -136,13 +118,13 @@
                     <p>Precio: $50</p>              
                 </div>
                 <div class="col-lg-6 col-md-12 col-sm-12 menuItemImg">
-                    <img src="../imgs/mochi.jpg" class="img-fluid" alt="">
+                    <img src="../imgs/mochi.jpg" class="img-fluid" alt="Tres piezas de mochi y almendras sobre tabla de madera">
                 </div>
             </div>
 
             <div class="row">
                 <div class="col-lg-12 col-md-12 col-sm-12 plusIcon">
-                <img src="../imgs/icons8-más.svg" width="30px" height="30px" class="imgPlusIcon" alt="ícono de agregar al carrito">
+                <img src="../imgs/icons8-más.svg" class="imgPlusIcon" alt="ícono de agregar al carrito">
                 </div>
             </div>
 
@@ -152,7 +134,7 @@
 
             <div class="row">
                 <div class="col-lg-6 col-md-12 col-sm-12 menuItemImg">
-                    <img src="../imgs/shio_daifuku.jpg" class="img-fluid" alt="">
+                    <img src="../imgs/shio_daifuku.jpg" class="img-fluid" alt="Dos porciones de shio daifuku sobre plato celeste">
                 </div>
                 <div class="col-lg-6 col-md-12 col-sm-12 menuItemText">                       
                     <h3>Shio Daifuku</h3>
@@ -163,7 +145,7 @@
 
             <div class="row">
                 <div class="col-lg-12 col-md-12 col-sm-12 plusIcon">
-                <img src="../imgs/icons8-más.svg" width="30px" height="30px" class="imgPlusIcon" alt="ícono de agregar al carrito">
+                <img src="../imgs/icons8-más.svg" class="imgPlusIcon" alt="ícono de agregar al carrito">
                 </div>
             </div>
 
@@ -178,13 +160,13 @@
                     <p>Precio: $50</p>            
                 </div>
                 <div class="col-lg-6 col-md-12 col-sm-12 menuItemImg">
-                    <img src="../imgs/imagawayaki.jpg" class="img-fluid" alt="">
+                    <img src="../imgs/imagawayaki.jpg" class="img-fluid" alt="Imagawayakis sobre plato negro">
                 </div>
             </div>
 
             <div class="row">
                 <div class="col-lg-12 col-md-12 col-sm-12 plusIcon">
-                <img src="../imgs/icons8-más.svg" width="30px" height="30px" class="imgPlusIcon" alt="ícono de agregar al carrito">
+                <img src="../imgs/icons8-más.svg" class="imgPlusIcon" alt="ícono de agregar al carrito">
                 </div>
             </div>
 
@@ -194,7 +176,7 @@
 
             <div class="row">
                 <div class="col-lg-6 col-md-12 col-sm-12 menuItemImg">
-                    <img src="../imgs/taiyaki.jpg" class="img-fluid" alt="">
+                    <img src="../imgs/taiyaki.jpg" class="img-fluid" alt="Taiyakis sobre bandeja tradicional en mesa celeste">
                 </div>
                 <div class="col-lg-6 col-md-12 col-sm-12 menuItemText">                       
                     <h3>Taiyaki</h3>
@@ -205,7 +187,7 @@
 
             <div class="row">
                 <div class="col-lg-12 col-md-12 col-sm-12 plusIcon">
-                <img src="../imgs/icons8-más.svg" width="30px" height="30px" class="imgPlusIcon" alt="ícono de agregar al carrito">
+                <img src="../imgs/icons8-más.svg" class="imgPlusIcon" alt="ícono de agregar al carrito">
                 </div>
             </div>
 
@@ -220,13 +202,13 @@
                     <p>Precio: $50</p>          
                 </div>
                 <div class="col-lg-6 col-md-12 col-sm-12 menuItemImg">
-                    <img src="../imgs/ikinari_dango.jpg" class="img-fluid" alt="">
+                    <img src="../imgs/ikinari_dango.jpg" class="img-fluid" alt="Personas sosteniendo dos mitades de ikinari dango">
                 </div>
             </div>
 
             <div class="row">
                 <div class="col-lg-12 col-md-12 col-sm-12 plusIcon">
-                <img src="../imgs/icons8-más.svg" width="30px" height="30px" class="imgPlusIcon" alt="ícono de agregar al carrito">
+                <img src="../imgs/icons8-más.svg" class="imgPlusIcon" alt="ícono de agregar al carrito">
                 </div>
             </div>
 
@@ -244,10 +226,10 @@
             </div>
 
             <div class="topFooterDivTwo">
-                <a href="https://www.instagram.com/" target="_blank"><img class="logosFooter" src="../imgs/icons8-instagram.svg" alt="instagram logo"></a>
-                <a href="https://twitter.com/" target="_blank"><img class="logosFooter" src="../imgs/icons8-twitter.svg" alt="twitter logo"></a>
-                <a href="https://www.tiktok.com/" target="_blank"><img class="logosFooter" src="../imgs/icons8-tik-tok.svg"  alt="tiktok logo"></a>
-                <a href="https://www.facebook.com/" target="_blank"><img class="logosFooter" src="../imgs/icons8-facebook.svg" alt="facebook logo"></a>
+                <a href="https://www.instagram.com/" target="_blank"><img class="logosFooter" src="../imgs/icons8-instagram.svg" alt="logo de instagram"></a>
+                <a href="https://twitter.com/" target="_blank"><img class="logosFooter" src="../imgs/icons8-twitter.svg" alt="logo de twitter"></a>
+                <a href="https://www.tiktok.com/" target="_blank"><img class="logosFooter" src="../imgs/icons8-tik-tok.svg"  alt="logo de tiktok"></a>
+                <a href="https://www.facebook.com/" target="_blank"><img class="logosFooter" src="../imgs/icons8-facebook.svg" alt="logo de facebook"></a>
             </div>
 
         </section>

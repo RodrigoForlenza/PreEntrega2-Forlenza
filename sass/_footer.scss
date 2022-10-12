@@ -1,0 +1,102 @@
+.footer{
+    font-size: 1.7em;
+}
+
+.topFooter {
+    background-color: rgb(202, 70, 70);
+    display: flex;
+    flex-direction: column;
+}
+
+.topFooterDivOne {
+    display: flex;
+    align-self: flex-start;
+    margin-left: 3em;
+}
+
+.topFooterDivOne b{
+    color: black;
+    font-weight: bold;
+}
+
+.topFooterDivTwo { 
+    
+    align-self: flex-start;
+    margin-left: 2em;
+}
+
+.topFooterDivTwo a {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+}
+
+.logosFooter{
+    width: 40px; 
+    height: 40px;
+    transition: 0.5s ease;
+}
+
+.logosFooter:hover{
+    transform: scale(1.2);
+    transition: 0.5s;
+}
+
+.bottomFooterHeader{
+    background-color: black;
+    padding: 2.5em;    
+    display: flex;
+    justify-content: center;
+}
+
+.bottomFooterHeader h2{
+    color: whitesmoke;
+    margin-bottom: 2em;
+    padding-bottom: 0.2em;
+    border-bottom: 2px whitesmoke solid;
+}
+
+.bottomFooterList{
+    background-color: black;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.bottomFooterFirstDiv ul{
+    color: whitesmoke;
+}
+
+.bottomFooterFirstDiv ul li{
+    list-style-type: none;
+    padding-bottom: 1.3em;
+}
+
+@media(min-width:500px){
+    .topFooter {
+        background-color: rgb(202, 70, 70);
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    .topFooterDivOne {
+        display: flex;
+        align-self: center;
+        margin-left: 4em;
+    }
+    
+    .topFooterDivTwo { 
+        justify-content: space-evenly;
+        margin-right: 4em;
+    
+    }
+    
+    .topFooterDivTwo a {
+        padding-left: 0.7em;
+        padding-right: 0.7em;
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
